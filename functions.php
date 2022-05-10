@@ -12,7 +12,7 @@ if(!empty($_POST['enviar'])){
         $inserido = $wpdb->insert('contatos', array(
             'nome'      => $nome,
             'sobrenome' => $sobrenome,
-            'CPF'       => $cpf,
+            'cpf'       => $cpf,
             'email'     => $email,
             'telefone'  => $telefone
         ));
