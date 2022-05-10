@@ -53,12 +53,12 @@
                 <td><?php echo $resultado->id;?></td>
                 <td><?php echo $resultado->nome;?></td>
                 <td><?php echo $resultado->sobrenome;?></td>
-                <td><?php echo $resultado->CPF;?></td>
+                <td><?php echo $resultado->cpf;?></td>
                 <td><?php echo $resultado->email;?></td>
                 <td><?php echo $resultado->telefone;?></td>
                 <td>
                     <a href='?apagar=<?php echo $resultado->id;?>' id='excluir'>Excluir</a>
-                    <a href='#' id='editar'>Editar</a>
+                    <a href='?editar=<?php echo $resultado->id;?>' id='editar'>Editar</a>
                 </td>
             </tr>
             <?php } ?>
