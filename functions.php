@@ -1,6 +1,6 @@
 <?php 
 global $wpdb;
-
+$wpdb->show_errors();
 if(!empty($_POST['enviar'])){
     if (!empty($_POST['nome']) && !empty($_POST['sobrenome']) && !empty($_POST['telefone'])){
         $nome      = sanitize_text_field($_POST['nome']);
@@ -29,4 +29,5 @@ if(!empty($_GET['apagar'])){
     $id = sanitize_text_field($_GET['apagar']);
     $apagar = $wpdb->delete('contatos', array('id' => $id));
 }
+
 ?>
