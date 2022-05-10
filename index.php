@@ -36,7 +36,6 @@
         <h2>Listar:</h2>
         <table>
             <tr>
-                <th>ID: </th>
                 <th>Nome:</th>
                 <th>Sobrenome:</th>
                 <th>CPF:</th>
@@ -50,7 +49,6 @@
                 foreach($resultados as $resultado){ 
             ?>
             <tr>
-                <td><?php echo $resultado->id;?></td>
                 <td><?php echo $resultado->nome;?></td>
                 <td><?php echo $resultado->sobrenome;?></td>
                 <td><?php echo $resultado->cpf;?></td>
@@ -58,14 +56,12 @@
                 <td><?php echo $resultado->telefone;?></td>
                 <td>
                     <a href='?apagar=<?php echo $resultado->id;?>' id='excluir'>Excluir</a>
-                    <a href='?editar=<?php echo $resultado->id;?>' id='editar'>Editar</a>
+                    <input type="submit" id="editar" value="Editar" name="editar">
                 </td>
             </tr>
             <?php } ?>
         </table>
     </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="/wordpress/wp-content/themes/cadastro-contatos/scripts.js"></script>
 </body>
 </html>
