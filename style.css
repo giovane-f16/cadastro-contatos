@@ -52,9 +52,11 @@ td, th{
     text-decoration: none;
     background-color: #4c82af;
     color: white;
-    padding: 7px;
+    padding: 9px;
     border-radius: 5px;
+    border: none;
     margin: 5px;
+    cursor: pointer;
 }
 #editar:hover{
     background-color: #416f96;
