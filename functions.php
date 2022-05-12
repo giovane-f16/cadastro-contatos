@@ -2,7 +2,6 @@
 global $wpdb;
 
 $wpdb->show_errors();
-
 // inserindo
 if(!empty($_POST['enviar'])){
     if (!empty($_POST['nome']) && !empty($_POST['sobrenome']) && !empty($_POST['telefone'])){
@@ -26,14 +25,11 @@ if(!empty($_POST['enviar'])){
         echo 'Preencha os campos obrigatórios';
     }
 }
-
 // deletando
 if(!empty($_GET['apagar'])){
     $id = sanitize_text_field($_GET['apagar']);
-    var_dump($id);
     $apagar = $wpdb->delete('contatos', array('id' => $id));
 }
-
 // editando
 if(!empty($_GET['editar'])){
     $id = sanitize_text_field($_GET['editar']);

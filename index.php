@@ -56,38 +56,41 @@
                 <td><?php echo $resultado->email;?></td>
                 <td><?php echo $resultado->telefone;?></td>
                 <td>
-                    <a href='?apagar=<?php echo $resultado->id;?>' id='excluir'>Excluir</a>
-                    <a href='?editar=<?php echo $resultado->id;?>' id='editar'>Editar</a>
+                    <a href='?apagar=<?php echo $resultado->id;?>' id='btn-excluir'>Excluir</a>
+                    <a href='?editar=<?php echo $resultado->id;?>' id='btn-editar'>Editar</a>
                 </td>
             </tr>
             <?php } ?>
         </table>
     </div>
-    <div class="editar">
-        <form id="formularioEditar" method="POST">
-            <fieldset>
-                <h3>Editar</h3>
-                <label for="nomeEditar"><b>Nome*</b></label>
-                <input type="text" name="nomeEditar" id="nomeEditar" require placeholder="Digite o novo nome">
+    <div class="editar" id="editar">
+        <div class="editar-content">
+            <form class="editar-formulario" method="POST">
+                <fieldset class="editar-campos">
+                    <label for="nomeEditar"><b>Nome*</b></label>
+                    <input type="text" name="nomeEditar" id="nomeEditar" require placeholder="Digite o novo nome">
 
-                <label for="sobrenomeEditar"><b>Sobrenome*</b></label>
-                <input type="text" name="sobrenomeEditar" id="sobrenomeEditar" require placeholder="Digite o novo Sobrenome">
+                    <label for="sobrenomeEditar"><b>Sobrenome*</b></label>
+                    <input type="text" name="sobrenomeEditar" id="sobrenomeEditar" require placeholder="Digite o novo Sobrenome">
 
-                <label for="cpfEditar"><b>CPF</b></label>
-                <input type="text" name="cpfEditar" id="cpfEditar" placeholder="xxx.xxx.xxx-xx">
+                    <label for="cpfEditar"><b>CPF</b></label>
+                    <input type="text" name="cpfEditar" id="cpfEditar" placeholder="xxx.xxx.xxx-xx">
 
-                <label for="emailEditar"><b>E-mail</b></label>
-                <input type="email" name="emailEditar" id="emailEditar" placeholder="Novo e-mail">
-                
-                <label for="telefoneEditar"><b>Telefone*</b></label>
-                <input type="number" name="telefoneEditar" id="telefoneEditar" require placeholder="Novo telefone">
-                
-                <input type="submit" value="Enviar" name="enviarEditar" id="enviarEditar">
-            </fieldset>
-        </form>
+                    <label for="emailEditar"><b>E-mail</b></label>
+                    <input type="email" name="emailEditar" id="emailEditar" placeholder="Novo e-mail">
+                    
+                    <label for="telefoneEditar"><b>Telefone*</b></label>
+                    <input type="number" name="telefoneEditar" id="telefoneEditar" require placeholder="Novo telefone">
+                    
+                    <footer class="btn-editar">
+                        <input type="submit" value="Atualizar" name="enviarEditar" id="enviarEditar">
+                        <input type="submit" value="Cancelar" name="cancelarEditar" id="cancelarEditar">
+                    </footer>
+                </fieldset>
+            </form>
+        </div>
     </div>
-    <footer>
-    </footer>
+    <footer></footer>
     <script src="/wordpress/wp-content/themes/cadastro-contatos/scripts.js"></script>
 </body>
 </html>

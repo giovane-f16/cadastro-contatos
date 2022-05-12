@@ -1,8 +1,9 @@
 /*
-document.getElementById("editar").addEventListener("click", function(){
-    document.getElementById("secaoEditar").style.display = "block";
-});
-document.getElementById("cancelar").addEventListener("click", function(){
-    getElementById("secaoEditar").style.display = "none";
-});
+'use strict'
+
+const abrirEditar = () => document.getElementById('editar').classList.add('ativo');
+
+document.getElementById('btn-editar').addEventListener('click', abrirEditar);
+
+document.getElementById('cancelarEditar').addEventListener('click', fecharEditar);
 */
