@@ -36,29 +36,38 @@ if(!empty($_GET['apagar'])){
 
 // editando
 if(!empty($_GET['editar'])){
-    
     $id = sanitize_text_field($_GET['editar']);
-    
     if(!empty($_POST['enviarEditar'])){
-        // dados
         $nomeEditar      = sanitize_text_field($_POST['nomeEditar']);
         $sobrenomeEditar = sanitize_text_field($_POST['sobrenomeEditar']);
         $cpfEditar       = sanitize_text_field($_POST['cpfEditar']);
         $emailEditar     = sanitize_text_field($_POST['emailEditar']);
         $telefoneEditar  = sanitize_text_field($_POST['telefoneEditar']);
-
-        $editado = $wpdb->update('contatos', array(
-            'nome'      => $nomeEditar,
-            'sobrenome' => $sobrenomeEditar,
-            'cpf'       => $cpfEditar,
-            'email'     => $emailEditar,
-            'telefone'  => $telefoneEditar
-        ), array('id' => $id));
-
-        if($editado){
-            echo "funcionou";
-        } else {
-            echo "algo está errado";
+        
+        if(!empty($nomeEditar)){
+            $wpdb->update('contatos', array(
+                'nome' => $nomeEditar
+            ), array('id' => $id));
+        }
+        if(!empty($sobrenomeEditar)){
+            $wpdb->update('contatos', array(
+                'sobrenome' => $sobrenomeEditar
+            ), array('id' => $id));
+        }
+        if(!empty($cpfEditar)){
+            $wpdb->update('contatos', array(
+                'cpf' => $cpfEditar
+            ), array('id' => $id));
+        }
+        if(!empty($emailEditar)){
+            $wpdb->update('contatos', array(
+                'email' => $emailEditar
+            ), array('id' => $id));
+        }
+        if(!empty($telefoneEditar)){
+            $wpdb->update('contatos', array(
+                'telefone' => $telefoneEditar
+            ), array('id' => $id));
         }
     }
 }
