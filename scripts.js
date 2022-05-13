@@ -1,9 +1,13 @@
-/*
 'use strict'
 
-const abrirEditar = () => document.getElementById('editar').classList.add('ativo');
+const openModal = () => document.getElementById('modal')
+    .classList.add('active')
 
-document.getElementById('btn-editar').addEventListener('click', abrirEditar);
+const closeModal = () => document.getElementById('modal')
+    .classList.remove('active')
 
-document.getElementById('cancelarEditar').addEventListener('click', fecharEditar);
-*/
+document.getElementById('cadastrarContato')
+    .addEventListener('click', openModal)
+
+document.getElementById('modalClose')
+    .addEventListener('click', closeModal)
