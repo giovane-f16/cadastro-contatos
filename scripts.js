@@ -11,3 +11,7 @@ document.getElementById('cadastrarContato')
 
 document.getElementById('modalClose')
     .addEventListener('click', closeModal)
+
+document.getElementById('btn-excluir').addEventListener('click', function(){
+    window.location.href = "http://localhost/wordpress";
+});

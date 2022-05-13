@@ -1,8 +1,7 @@
 <?php 
+
 global $wpdb;
 
-$wpdb->show_errors();
-// inserindo
 if(!empty($_POST['enviar'])){
     if (!empty($_POST['nome']) && !empty($_POST['sobrenome']) && !empty($_POST['telefone'])){
         $nome      = sanitize_text_field($_POST['nome']);
@@ -18,19 +17,16 @@ if(!empty($_POST['enviar'])){
             'email'     => $email,
             'telefone'  => $telefone
         ));
-        if(!$inserido){
-            echo "Não cadastrado"; // validar dados iguais
-        }
     } else{
         echo 'Preencha os campos obrigatórios';
     }
 }
-// deletando
+
 if(!empty($_GET['apagar'])){
     $id = sanitize_text_field($_GET['apagar']);
     $apagar = $wpdb->delete('contatos', array('id' => $id));
 }
-// editando
+
 if(!empty($_GET['editar'])){
     $id = sanitize_text_field($_GET['editar']);
     if(!empty($_POST['enviarEditar'])){
@@ -65,6 +61,11 @@ if(!empty($_GET['editar'])){
                 'telefone' => $telefoneEditar
             ), array('id' => $id));
         }
+    }
+}
+function verificarId(){
+    if(!empty($_GET['editar'])){
+        echo $_GET['editar'];
     }
 }
 ?>

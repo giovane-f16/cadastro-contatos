@@ -21,6 +21,7 @@
         <table class="records">
             <thead>
                 <tr>
+                    <th>ID:</th>
                     <th>Nome:</th>
                     <th>Sobrenome:</th>
                     <th>CPF:</th>
@@ -36,6 +37,7 @@
                     foreach($resultados as $resultado){ 
                 ?>
                 <tr>
+                    <td><?php echo $resultado->id;?></td>
                     <td><?php echo $resultado->nome;?></td>
                     <td><?php echo $resultado->sobrenome;?></td>
                     <td><?php echo $resultado->cpf;?></td>
@@ -71,8 +73,7 @@
             <div class="records" id="modal">
                 <div class="modal-content">
                     <header class="modal-header">
-                        <h2>Editar Contato</h2>
-                        <span class="modal-close" id="modalClose">&#10006;</span>
+                        <h2>Editar Contato: <?php verificarId();?></h2>
                     </header>
                     <form id="formulario" method="POST" class="modal-form">                    
                         <input type="text" class="modal-field" name="nomeEditar" id="nomeEditar" require placeholder="Digite o novo nome">
@@ -82,7 +83,6 @@
                         <input type="number" class="modal-field" name="telefoneEditar" id="telefoneEditar" require placeholder="Novo telefone">
                         <footer class="modal-footer">
                             <input type="submit" class="button green" value="Atualizar" name="enviarEditar" id="enviarEditar">
-                            <input type="submit" class="button red" value="Cancelar" name="cancelarEditar" id="cancelarEditar">
                         </footer>
                     </form>
                 </div>
