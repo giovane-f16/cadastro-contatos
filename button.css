@@ -13,15 +13,14 @@
     background-color: #1FB6FF;
 }
 
-button.green{
+.button.green{
     background-color: #13CE66;
 }
 
-button.red{
+.button.red{
     background-color: #FF4949;
 }
-
-button:hover{
+.button:hover{
     box-shadow: inset 200px 0 0 #00000055;
 }
 .a{
@@ -31,12 +30,19 @@ button:hover{
     padding: 6px 12px;
     font-size: 1rem;
 }
+
 .a.red{
     background-color: #FF4949;
 }
-a.green{
+
+.a.green{
     background-color: #13CE66;
 }
+
+.a:hover{
+    box-shadow: inset 200px 0 0 #00000055;
+}
+
 @media(max-width:480px){
     .button.mobile{
         color:transparent;

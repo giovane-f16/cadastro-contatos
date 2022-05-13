@@ -68,7 +68,7 @@
                 </div>
             </div>
 
-            <div class="modal" id="modal">
+            <div class="records" id="modal">
                 <div class="modal-content">
                     <header class="modal-header">
                         <h2>Editar Contato</h2>
@@ -81,8 +81,8 @@
                         <input type="email" class="modal-field" name="emailEditar" id="emailEditar" placeholder="Novo e-mail">
                         <input type="number" class="modal-field" name="telefoneEditar" id="telefoneEditar" require placeholder="Novo telefone">
                         <footer class="modal-footer">
-                            <input type="submit" value="Atualizar" name="enviarEditar" id="enviarEditar">
-                            <input type="submit" value="Cancelar" name="cancelarEditar" id="cancelarEditar">
+                            <input type="submit" class="button green" value="Atualizar" name="enviarEditar" id="enviarEditar">
+                            <input type="submit" class="button red" value="Cancelar" name="cancelarEditar" id="cancelarEditar">
                         </footer>
                     </form>
                 </div>
@@ -92,31 +92,3 @@
     <script src="/wordpress/wp-content/themes/cadastro-contatos/scripts.js"></script>
 </body>
 </html>
-
-
-<!--div class="modal" id="modal">
-            <div class="editar-content">
-                <form class="editar-formulario" method="POST">
-
-                        <label for="nomeEditar"><b>Nome*</b></label>
-                        <input type="text" name="nomeEditar" id="nomeEditar" require placeholder="Digite o novo nome">
-
-                        <label for="sobrenomeEditar"><b>Sobrenome*</b></label>
-                        <input type="text" name="sobrenomeEditar" id="sobrenomeEditar" require placeholder="Digite o novo Sobrenome">
-
-                        <label for="cpfEditar"><b>CPF</b></label>
-                        <input type="text" name="cpfEditar" id="cpfEditar" placeholder="xxx.xxx.xxx-xx">
-
-                        <label for="emailEditar"><b>E-mail</b></label>
-                        <input type="email" name="emailEditar" id="emailEditar" placeholder="Novo e-mail">
-                        
-                        <label for="telefoneEditar"><b>Telefone*</b></label>
-                        <input type="number" name="telefoneEditar" id="telefoneEditar" require placeholder="Novo telefone">
-                        
-                        <footer class="btn-editar">
-                            <input type="submit" value="Atualizar" name="enviarEditar" id="enviarEditar">
-                            <input type="submit" value="Cancelar" name="cancelarEditar" id="cancelarEditar">
-                        </footer>
-                </form>
-            </div>
-    </div>
