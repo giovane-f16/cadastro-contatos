@@ -1,5 +1,5 @@
 # Cadastro de contatos
-Aplicação feita em HTML5, CSS3, JavaScript e PHP 8.0.13
+Aplicação feita no WordPress utilizando HTML5, CSS3, JavaScript e PHP 8.0.13.
 
 ## Objetivo
 Realizar um cadastro de contato, contendo a possibilidade de edição após ser salvo, os campos disponíveis são: 
@@ -10,7 +10,10 @@ Realizar um cadastro de contato, contendo a possibilidade de edição após ser 
 - E-mail
 - Telefone*
 
-(marcados com * os obrigatórios)
+(marcados com * os obrigatórios).
+
+Todos os cadastros realizados são guardados no Banco de Dados MySql.
+
 <hr>
 
 ![image](https://user-images.githubusercontent.com/63614241/168320831-f83458ae-d8a4-4b83-a138-b96db02bc282.png)
