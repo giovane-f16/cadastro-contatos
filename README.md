@@ -18,14 +18,14 @@ Todos os cadastros realizados são guardados no Banco de Dados MySQL.
 
 1. Antes de tudo, você já deve ter o ambiente com o seu servidor web, o MySql e o Wordpress instalado. Neste projeto utilizei o Xampp para Windows.
 
-2. Crie uma pasta chamada cadastro-contatos no caminho: **/xampp/htdocs/wordpress/wp-content/themes/** e faça o clone do repositório.
+2. Crie uma pasta chamada **cadastro-contatos** no caminho: **/xampp/htdocs/wordpress/wp-content/themes/** e faça o clone do repositório.
 
 
         git clone https://github.com/giovanef16-sys/cadastro-contatos
         
 3. No MySQL, dentro do banco de dados wordpress, realize a criação da tabela contatos com as colunas: nome, sobrenome, cpf, email e telefone, adicionando um ID como Primary Key e telefone como Unique.
 
-A estrutura tem que ficar da seguinte maneira:
+    A estrutura tem que ficar da seguinte maneira:
 | Imagem 1 | Imagem 2 |
 |----------|----------|
 |![image1](https://user-images.githubusercontent.com/63614241/168440686-a93cabf9-1561-49cb-8835-bcfef304ff64.png)| ![image](https://user-images.githubusercontent.com/63614241/168440830-97465fd7-d0a5-435f-85b2-1a2224d77269.png)
