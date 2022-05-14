@@ -6,10 +6,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,200;1,800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/wordpress/wp-content/themes/cadastro-contatos/main.css">
-    <link rel="stylesheet" href="/wordpress/wp-content/themes/cadastro-contatos/button.css">
-    <link rel="stylesheet" href="/wordpress/wp-content/themes/cadastro-contatos/records.css">
-    <link rel="stylesheet" href="/wordpress/wp-content/themes/cadastro-contatos/modal.css">
+    <link rel="stylesheet" href="/wordpress/wp-content/themes/cadastro-contatos/css/main.css">
+    <link rel="stylesheet" href="/wordpress/wp-content/themes/cadastro-contatos/css/button.css">
+    <link rel="stylesheet" href="/wordpress/wp-content/themes/cadastro-contatos/css/records.css">
+    <link rel="stylesheet" href="/wordpress/wp-content/themes/cadastro-contatos/css/modal.css">
     <title>Cadastro de contatos</title>
 </head>
 <body>
@@ -64,13 +64,13 @@
                         <input type="email" class="modal-field" name="email" id="email" placeholder="exemplo@email.com">
                         <input type="number" class="modal-field" name="telefone" id="telefone" require placeholder="Telefone*">
                         <footer class="modal-footer">
-                            <input type="submit" class="button green" value="Enviar" name="enviar" id="enviar">
+                            <input type="submit" class="button green" value="Cadastrar" name="enviar" id="enviar">
                         </footer>
                     </form>
                 </div>
             </div>
 
-            <div class="records" id="modal">
+            <div class="records" id="editar">
                 <div class="modal-content">
                     <header class="modal-header">
                         <h2>Editar Contato: <?php verificarId();?></h2>

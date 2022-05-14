@@ -63,6 +63,7 @@ if(!empty($_GET['editar'])){
         }
     }
 }
+
 function verificarId(){
     if(!empty($_GET['editar'])){
         echo $_GET['editar'];
