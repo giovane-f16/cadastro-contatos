@@ -18,8 +18,9 @@ Todos os cadastros realizados são guardados no Banco de Dados MySql.
 
 Antes de tudo, você já deve ter o ambiente com o seu servidor web, o MySql e o Wordpress instalado. 
 
-Neste projeto utilizei o Xampp para Windows, com isso, basta clonar o repositório, no diretório **/xampp/htdocs/wordpress/wp-content/themes/**
-e ativar o tema no seu wp-admin
+Neste projeto utilizei o Xampp para Windows, com isso, basta clonar o repositório, no diretório:
+
+**/xampp/htdocs/wordpress/wp-content/themes/** e ativar o tema no seu wp-admin
 
         git clone https://github.com/giovanef16-sys/cadastro-contatos
 <hr>
