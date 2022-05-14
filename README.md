@@ -23,6 +23,7 @@ e ativar o tema no seu wp-admin
 
         git clone https://github.com/giovanef16-sys/cadastro-contatos
 <hr>
+
 ## Prévia
 
 ![image](https://user-images.githubusercontent.com/63614241/168320831-f83458ae-d8a4-4b83-a138-b96db02bc282.png)
