@@ -1,5 +1,5 @@
 # Cadastro de contatos
-Aplicação feita no WordPress utilizando HTML5, CSS3, JavaScript e PHP 8.0.13.
+Tema desenvolvido no WordPress utilizando HTML5, CSS3, JavaScript e PHP 8.0.13.
 
 ## Objetivo
 Realizar um cadastro de contato, contendo a possibilidade de edição após ser salvo, os campos disponíveis são: 
