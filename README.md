@@ -12,7 +12,7 @@ Realizar um cadastro de contato, contendo a possibilidade de edição após ser 
 
 (marcados com * os obrigatórios).
 
-Todos os cadastros realizados são guardados no Banco de Dados MySql.
+Todos os cadastros realizados são guardados no Banco de Dados MySQL.
 
 ## Instalação
 
