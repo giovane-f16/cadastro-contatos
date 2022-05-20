@@ -21,7 +21,7 @@ Todos os cadastros realizados são guardados no Banco de Dados MySQL.
 2. Crie uma pasta chamada **cadastro-contatos** no caminho: **/xampp/htdocs/wordpress/wp-content/themes/** e faça o clone do repositório.
 
 
-        git clone https://github.com/giovanef16-sys/cadastro-contatos
+        git clone https://github.com/giovane-f16/cadastro-contatos
         
 3. No MySQL, dentro do banco de dados wordpress, realize a criação da tabela contatos com as colunas: nome, sobrenome, cpf, email e telefone, adicionando um ID como Primary Key e telefone como Unique.
 
